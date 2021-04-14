@@ -1,5 +1,7 @@
 import React from 'react'
 import './custom.scss'
+import { AddBooks } from './pages/AddBooks'
+import { Route, Switch } from 'react-router-dom'
 
 export function App() {
   return (
@@ -49,23 +51,16 @@ export function App() {
           <input type="text" />
         </di>
       </aside>
-      {/* <aside class="row justify-content-md-center">
-        <p class="col-sm-2">Here</p>
-        <p class="col-md-auto">Hey there I am Ham</p>
-        <p class="col-sm-2">Here</p>
-        <div class="w-100"></div>
-        <p class="col">Here</p>
-        <p class="col-6">Here</p>
-        <p class="col">Here</p>
-      </aside>
-      <aside class="row">
-        <p class="col">Here</p>
-        <p class="col">Here</p>
-        <p class="col">Here</p>
-        <p class="col">Here</p>
-        <p class="col">Here</p>
-        <p class="col">Here</p>
-      </aside> */}
+
+      <Switch>
+        <Route exact path="/">
+          <App />
+        </Route>
+        <Route exact path="/addBooks">
+          <AddBooks />
+        </Route>
+        <Route path="*">This food page was not found</Route>
+      </Switch>
     </div>
   )
 }
