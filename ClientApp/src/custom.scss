@@ -11,6 +11,11 @@ body {
   min-height: 100%;
 }
 
-p {
+div.col {
   border: solid thin black;
+}
+
+.col input,
+textarea {
+  background-color: rgba(255, 235, 205, 0.651);
 }
