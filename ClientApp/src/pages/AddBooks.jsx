@@ -1,8 +1,10 @@
 import React from 'react'
+import { Menu } from './Menu'
 
 export function AddBooks() {
   return (
     <>
+      <Menu />
       <h1>Welcome!</h1>
       <div className="container">
         <aside className="row">

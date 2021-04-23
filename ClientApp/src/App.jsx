@@ -3,6 +3,7 @@ import './custom.scss'
 import { AddBooks } from './pages/AddBooks'
 import { Route, Switch } from 'react-router-dom'
 import { LoginPage } from './pages/LoginPage'
+import { BookInfo } from './pages/BookInfo'
 
 export function App() {
   return (
@@ -12,6 +13,9 @@ export function App() {
       </Route>
       <Route exact path="/addBooks">
         <AddBooks />
+      </Route>
+      <Route exact path="/bookInfo">
+        <BookInfo />
       </Route>
       <Route path="*">This food page was not found</Route>
     </Switch>
