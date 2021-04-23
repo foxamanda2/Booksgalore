@@ -32,7 +32,7 @@ export function LoginPage() {
             </p>
           </div>
 
-          <div class="col">
+          <div className="col">
             <h3>Login</h3>
             <p>
               <label>Email</label>

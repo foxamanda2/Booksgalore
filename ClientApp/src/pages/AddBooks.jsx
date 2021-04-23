@@ -1,10 +1,8 @@
 import React from 'react'
-import { Menu } from './Menu'
 
 export function AddBooks() {
   return (
     <>
-      <Menu />
       <h1>Welcome!</h1>
       <div className="container">
         <aside className="row">
@@ -22,18 +20,14 @@ export function AddBooks() {
           </div>
           <div className="col">
             <h2>All Books</h2>
-            <p>
-              <a href="">There and back again</a>
-              Stuff here about the book
-            </p>
-            <p>
-              <a href="">Lord of the rings</a>
-              Stuff here about the book
-            </p>
-            <p>
-              <a href="">Harry Potter</a>
-              Stuff here about the book
-            </p>
+            <a>There and back again</a>
+            <p>Stuff here about the book</p>
+
+            <a>Lord of the rings</a>
+            <p>Stuff here about the book</p>
+
+            <a>Harry Potter</a>
+            <p>Stuff here about the book</p>
           </div>
         </aside>
       </div>

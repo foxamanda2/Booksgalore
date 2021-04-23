@@ -14,6 +14,13 @@ namespace Booksgalore.Models
         private static bool LOG_SQL_STATEMENTS_IN_DEVELOPMENT = false;
 
         // Add database tables here
+        public DbSet<Book> Books { get; set; }
+
+        public DbSet<User> Users { get; set; }
+
+        public DbSet<FavoriteBook> FavoriteBooks { get; set; }
+
+
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
