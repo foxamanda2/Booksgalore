@@ -1,22 +1,36 @@
 using System;
+using System.Collections.Generic;
+using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Identity;
+
 
 namespace Booksgalore.Models
 {
     public class User
     {
-        public int Id { get; set; }
-
-        public string Firstname { get; set; }
-
-        public string Lastname { get; set; }
+        public string FullName { get; set; }
 
         public string Email { get; set; }
+        public string HashedPassword { get; set; }
 
-        public string Password { get; set; }
+        public string Password
+        {
+            set
+            {
+                this.HashedPassword = new PasswordHasher<User>().HashPassword(this, value);
+            }
+        }
 
-        public DateTime Created_at { get; set; }
+        public bool IsValidPassword(string password)
+        {
+            var passwordVerification = PasswordHasher<User>().VerifyHashedPassword(this, this.HashedPassword, password);
 
-        public DateTime Updated_at { get; set; }
+            return passwordVerification == PasswordVerificationResults.Success;
+        }
+
+        public List<FavoriteBook> FavoriteBooks { get; set; }
+
+
 
     }
 }
