@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Booksgalore.Models
 {
@@ -11,6 +12,8 @@ namespace Booksgalore.Models
         public string Description { get; set; }
         public DateTime Created_at { get; set; } = DateTime.Now;
         public DateTime Updated_at { get; set; } = DateTime.Now;
+
+        public List<FavoriteBook> FavoriteBooks { get; set; }
 
     }
 }

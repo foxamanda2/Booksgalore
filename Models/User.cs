@@ -21,16 +21,14 @@ namespace Booksgalore.Models
             }
         }
 
-        public bool IsValidPassword(string password)
-        {
-            var passwordVerification = PasswordHasher<User>().VerifyHashedPassword(this, this.HashedPassword, password);
+        // public bool IsValidPassword(string password)
+        // {
+        //     var passwordVerification = PasswordHasher<User>().VerifyHashedPassword(this, this.HashedPassword, password);
 
-            return passwordVerification == PasswordVerificationResults.Success;
-        }
+        //     return passwordVerification == PasswordVerificationResults.Success;
+        // }
 
         public List<FavoriteBook> FavoriteBooks { get; set; }
-
-
 
     }
 }

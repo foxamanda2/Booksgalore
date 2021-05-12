@@ -19,15 +19,23 @@ export function AddBooks() {
             <button>Add</button>
           </div>
           <div className="col">
-            <h2>All Books</h2>
-            <a>There and back again</a>
-            <p>Stuff here about the book</p>
+            <div className="overflow-auto">
+              <h2>All Books</h2>
+              <a>There and back again</a>
+              <p>Stuff here about the book</p>
 
-            <a>Lord of the rings</a>
-            <p>Stuff here about the book</p>
+              <a>Lord of the rings</a>
+              <p>Stuff here about the book</p>
 
-            <a>Harry Potter</a>
-            <p>Stuff here about the book</p>
+              <a>Harry Potter</a>
+              <p>Stuff here about the book</p>
+
+              <a>The Alchamist</a>
+              <p>Stuff here about the book</p>
+
+              <a>Dune</a>
+              <p>Stuff here about the book</p>
+            </div>
           </div>
         </aside>
       </div>

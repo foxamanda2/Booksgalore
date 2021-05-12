@@ -20,3 +20,15 @@ div.col {
 textarea {
   background-color: rgba(255, 235, 205, 0.651);
 }
+
+.bookInfo {
+  text-align: center;
+}
+.overflow-auto {
+  width: 21rem;
+  height: 15rem;
+
+  h2 {
+    position: sticky;
+  }
+}

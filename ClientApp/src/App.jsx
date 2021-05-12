@@ -11,7 +11,7 @@ export function App() {
       <Route exact path="/">
         <LoginPage />
       </Route>
-      <Route exact path="/addBooks">
+      <Route exact path="/books">
         <AddBooks />
       </Route>
       <Route exact path="/bookInfo">
